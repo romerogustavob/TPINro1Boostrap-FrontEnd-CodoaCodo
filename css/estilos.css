@@ -12,50 +12,37 @@ body{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 }
+
 .header{
     height: 100vh;
 }
+
 .colorFondo{
     background-color: rgb(69, 69, 69);
 }
+
 .navbar-light .navbar-nav .verde{
    color: rgb(19, 158, 30);
 }
-.contenedorConferencia{
-    background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/ba1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 88%;
-    display:flex;
-    justify-content: flex-end;
-    align-items:center;
-}
-.hijoConferencia{
-    padding-right: 5rem;
-   
-    width: 50%;
-    height: 50%;
-    display: flex;
-    flex-direction:column;
-    justify-content:space-between;
-}
 
-.hijoConferencia h1{
-    color:white;
-    text-align: right;
-   
-}
-.textoConferencia{
-    font-size:25px;
-    font-size: 2rem; /*32px*/
-    font-size: 1.5rem;
-    line-height: 1.5;
-    font-weight: 500;/*negrita*/
+.carrusel {
+    padding-right: 100px;
+  }
+
+#carouselExampleControls img{
+    filter: brightness(50%);
+  }
+  
+.tituloConferencia, .textoConferencia{
+    
     color:white;
     text-align: right;
 }
 
+.btn-outline-secondary {
+    color: whitesmoke;
+    border-color: whitesmoke;
+  }
 
 .icon{
     color:rgb(237, 29, 157);
@@ -65,9 +52,35 @@ body{
     right: 10px;
     
 }
+
+#cards {
+    margin-bottom: 40px;
+  }
+  
+  .card-oradores:hover {
+    transition: 1.3s ease;
+    transform:scale(1.02);
+  }
+
+  .card-img-top {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .oradores {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .icon-prev-next {
+    display: none;
+  }
+
+
 .honolulu{
     height: 60vh;
 }
+
 .izquierda{
     background-image:url("../assets/img/honolulu.jpg");
     background-size: cover;
@@ -84,24 +97,45 @@ body{
     border:1px solid white;
 }
 
-/*MIERCOLES 5/4
-FONTAWESOME -ICONOS
-FAVICON
-FUENTE PROPIA DESCARGADA EN LA COMPU
-position:absolute
-position:relative
+.txt-white{
+    color: whitesmoke;
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(65, 65, 65);
+    text-align: justify;
+}
 
--mediasqueries responsive
--bootstrap
--bem
--animaciones-transiciones- transformaciones
--pseudoclases pseudoelementos :hover 
+#container-oradores {
+    margin-top: 20px;
+    width: 50%;
+  }
+  
+  footer {
+      background-color: rgb(54, 54, 108);
+      margin-top: 20px;
+  }
+  
+  .navFooter a:hover {
+   border-radius: 10px;
+   cursor: pointer;
+   background-color: rgb(43, 43, 83);
+  }  
 
-*/
-/*cuando la pantalla mida menos de 600 px*/
-/*cuando la pantalla sea de 601px para arriba */
+u{
+    text-decoration:underline dotted;
+}
 
-/* carga estos estilos */
+.btn-success-submit {
+    width: 100%;
+    background-color: #81c53d;
+    color: whitesmoke;
+  }
+
+  .btn-success-submit:hover {
+    width: 100%;
+    background-color: #609130;
+    color: whitesmoke;
+  }
 
 /*breakpoint para celular de 0 a 768px*/
 @media screen and (max-width: 767px)   {

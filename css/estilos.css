@@ -76,7 +76,10 @@ body{
     display: none;
   }
 
-
+  .btnsConferencia{
+    margin: 0%;
+    padding: 0%;
+  }
 .honolulu{
     height: 60vh;
 }
@@ -186,3 +189,34 @@ u{
 @media screen and (min-width:1401px) {
     
 }
+
+@media only screen and (min-device-width : 200px) and (max-device-width : 767px) {
+    
+    .carrusel {
+        padding: 0px;
+        margin: 0%;
+    }
+
+    #carouselExampleControls img{
+        filter: brightness(50%);
+    }
+  
+    .tituloConferencia, .textoConferencia{
+        font-size: xx-small;
+        color:white;
+        text-align: center;
+        margin: 0%;
+    }
+
+    .btnsConferencia{
+        margin:0%;
+        padding: 0%;
+        align-self: center;
+    }
+    .btn {
+       width: fit-content;
+       padding: 0%;
+        display: inline;
+        font-size: xx-small;
+    }
+  }
